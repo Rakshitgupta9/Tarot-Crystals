@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="active">Book Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking-hero">
+            <h1>Book Your Appointment</h1>
+            <p>Select your preferred date and time for the appointment.</p>
+        </section>
+
+        <section class="booking-form">
+            <h2>Appointment Details</h2>
+            <form id="bookingForm" action="appointment.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Select Service</label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="consultation">Consultation</option>
+                        <option value="therapy">Therapy Session</option>
+                        <option value="wellness">Wellness Check</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Select Date & Time</label>
+                    <input type="text" id="date" name="date" placeholder="Select a date and time" required>
+                </div>
+                <button type="submit" class="btn primary-btn">Book Appointment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <h2>Join Our Community</h2>
+                <p>Get the latest updates, offers, and insights directly in your inbox.</p>
+                <div class="footer-buttons">
+                    <a href="#" class="btn primary-btn">Sign Up for Newsletter</a>
+                    <a href="booking.html" class="btn secondary-btn">Make an Appointment</a>
+                </div>
+            </div>
+            <div class="footer-main">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Mission & Vision</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Webinars</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>Have questions? Reach out to us at:</p>
+                    <p><a href="mailto:2021a1r050@mietjammu.in">2021a1r050@mietjammu.in</a></p>
+                    <p><a href="tel:+919086304908">+91 9086304908</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tarot & Crystals. All rights reserved.</p>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="scripts.js" defer></script>
+
+</body>
+</html>
